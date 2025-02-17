@@ -3,96 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Guía Definitiva para la Escuela de Magia para Gatos</title>
-    <!-- Enlace a Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos personalizados (opcional) -->
-    <link href="css/style.css" rel="stylesheet">
+    <title>Escuela de Magia para Gatos</title>
+    <!-- favicon logo.png -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="scss/styles.css" rel="stylesheet">
+    <!-- Font Awesome (para íconos) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-
-    <!-- Encabezado -->
-    <header class="header-bg py-5 text-center">
-        <div class="container">
-            <h1 class="display-4">La Guía Definitiva para la Escuela de Magia para Gatos</h1>
-            <p class="lead">Descubre cómo los gatos pueden dominar el arte de la magia.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-pastel-magenta fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Escuela de Magia para Gatos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#modalidades">Modalidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#actividades">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Carrusel -->
-    <section class="py-5">
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white py-5">
         <div class="container">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <h1 class="display-4">¡Presentamos la Escuela de Magia para Gatos!</h1>
+            <p class="lead">Donde los gatos aprenden a dominar la magia y a convertirse en los mejores hechiceros.</p>
+            <a href="#modalidades" class="btn btn-pastel-pink btn-lg">Explora Nuestros Cursos</a>
+        </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="nosotros" class="container my-5">
+        <h2 class="text-center mb-4 text-white animate__animated animate__fadeInDown">Nuestra Historia Mágica</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 animate__animated animate__fadeInLeft">
+                <div class="bg-white p-4 rounded shadow">
+                    <h5 class="mb-3">Un lugar donde los felinos descubren su poder</h5>
+                    <p>En lo profundo de un bosque encantado, donde las estrellas brillan con un resplandor especial y la luna susurra secretos ancestrales, nació la Escuela de Magia para Gatos. Fundada por el legendario gato hechicero Merlín Bigotes, nuestra academia ha sido el hogar de generaciones de gatos mágicos.</p>
+                    <p>Aquí, cada maullido es un conjuro, cada salto es un hechizo en el aire, y cada ronroneo es un eco de la magia antigua. Desde hechizos de luz hasta encantamientos cósmicos, preparamos a nuestros alumnos felinos para descubrir sus dones ocultos y usarlos para el bien (o el caos divertido, dependiendo del día).</p>
+                    <p>Si tu gato siente una extraña conexión con la luna, se comunica con criaturas invisibles o simplemente desaparece misteriosamente en casa... ¡puede que ya tenga la magia dentro! Únete a nosotros y descubre su verdadero potencial.</p>
+                </div>
+            </div>
+            <div class="col-md-6 animate__animated animate__fadeInRight">
+                <img src="img/escuela2.png" class="img-fluid rounded mb-4" alt="Gatos aprendiendo magia">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modalidades -->
+    <section id="modalidades" class="container my-5">
+        <h1 class="text-center mb-4 text-white">✦•┈๑⋅⋯·······⊹ ࣪ ˖*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚⊹ ࣪ ˖·······⋯⋅๑┈•✦</h1>
+        <h2 class="text-center mb-4 text-white">Nuestras Modalidades</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="img/hada.png" class="card-img-top" alt="Hechizos de Hadas">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Hechizos de Hadas</h5>
+                        <p class="card-text">Aprende a realizar encantamientos mágicos y a volar con gracia como un hada.</p>
+                        <a href="#contacto" class="btn btn-pastel-purple mt-auto mb-2">Me interesa!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="img/espacio.png" class="card-img-top" alt="Magia Espacial">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Magia Espacial</h5>
+                        <p class="card-text">Descubre los secretos del cosmos y aprende a manipular la energía estelar.</p>
+                        <a href="#contacto" class="btn btn-pastel-purple mt-auto mb-2">Me interesa!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="img/sirena.png" class="card-img-top" alt="Misterios de Sirenas">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Misterios de Sirenas</h5>
+                        <p class="card-text">Sumérgete en el mundo acuático y descubre los secretos mágicos de las sirenas.</p>
+                        <a href="#contacto" class="btn btn-pastel-purple mt-auto mb-2">Me interesa!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="img/brujeria.png" class="card-img-top" alt="Encantamientos de Brujas">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Encantamientos de Brujas</h5>
+                        <p class="card-text">Aprende a crear pociones mágicas y elixires para diversas necesidades y situaciones.</p>
+                        <a href="#contacto" class="btn btn-pastel-purple mt-auto mb-2">Me interesa!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actividades Extraescolares -->
+    <section id="actividades" class="bg-pastel-blue text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Actividades Extraescolares</h2>
+            <div id="actividadesCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://via.placeholder.com/900x400.png?text=Hechizos+para+Gatos" class="d-block w-100" alt="Hechizos para Gatos">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-4">
+                                <img src="img/escoba.png" class="img-fluid rounded mb-4" alt="Gato volando en escoba" style="width: 400px;">
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Club de Vuelo en Escoba</h3>
+                                <p>Únete a nuestro club y aprende a volar en escoba. Participa en competiciones de vuelo y demuestra tus habilidades.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://via.placeholder.com/900x400.png?text=Pociones+Mágicas" class="d-block w-100" alt="Pociones Mágicas">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-4">
+                                <img src="img/online.png" class="img-fluid rounded mb-4" alt="Gato jugando en línea" style="width: 400px;">
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Práctica de hechicería</h3>
+                                <p>Desde nuestros juegos online podrás practicar aún más en casa.</p>
+                                <a href="https://doodles.google/doodle/halloween-2016/" class="btn btn-pastel-purple">1º Curso</a>
+                                <a href="https://doodles.google/doodle/halloween-2020/" class="btn btn-pastel-purple">2º Curso</a>
+                                <a href="https://doodles.google/doodle/halloween-2024/" class="btn btn-pastel-purple">3º Curso</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://via.placeholder.com/900x400.png?text=Astrología+Felina" class="d-block w-100" alt="Astrología Felina">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-4">
+                                <img src="img/bosque.png" class="img-fluid rounded mb-4" alt="Gato bosque" style="width: 400px;">
+                            </div>
+                            <div class="col-md-4">
+                                <h3>Exploración del Bosque Encantado</h3>
+                                <p>Explora el bosque, descubre criaturas mágicas y recolecta ingredientes raros.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Tarjetas -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Temas Clave</h2>
+        <!-- Michiartistas salidos de la escuela -->
+        <section id="michiartistas" class="container my-5">
+            <h2 class="text-center mb-4 text-white">Michiartistas salidos de la escuela</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card custom-card h-100">
-                        <img src="https://via.placeholder.com/300x200.png?text=Hechizos+Básicos" class="card-img-top" alt="Hechizos Básicos">
-                        <div class="card-body">
-                            <h5 class="card-title">Hechizos Básicos</h5>
-                            <p class="card-text">Aprende los hechizos fundamentales para principiantes felinos.</p>
-                            <a href="#" class="btn btn-primary">Leer más</a>
-                        </div>
+                <div class="col-md-4 mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/i-NgtMk_tCA?si=p4LRNTGkHs_t0Kdn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/1vkGxYx2vXg?si=AzIBx8imcEf_h83u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="row justify-content-center col-md-4 mb-4">
+                    <div >
+                        <canvas id="magicCanvas" width="500" height="315" class="bg-white"></canvas>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card custom-card h-100">
-                        <img src="https://via.placeholder.com/300x200.png?text=Pociones+Curativas" class="card-img-top" alt="Pociones Curativas">
-                        <div class="card-body">
-                            <h5 class="card-title">Pociones Curativas</h5>
-                            <p class="card-text">Descubre cómo preparar pociones que sanen a tu gato mágico.</p>
-                            <a href="#" class="btn btn-primary">Leer más</a>
-                        </div>
+            </div>
+        </section>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center mb-4 text-white">Contacto</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card custom-card h-100">
-                        <img src="https://via.placeholder.com/300x200.png?text=Astrología+Felina" class="card-img-top" alt="Astrología Felina">
-                        <div class="card-body">
-                            <h5 class="card-title">Astrología Felina</h5>
-                            <p class="card-text">Explora el mundo de las estrellas desde la perspectiva de un gato.</p>
-                            <a href="#" class="btn btn-primary">Leer más</a>
-                        </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-pastel-purple">Enviar</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Pie de Página -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2023 La Guía Definitiva para la Escuela de Magia para Gatos. Todos los derechos reservados.</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-pastel-purple text-white text-center py-4">
+        <p>&copy; 2025 Escuela de Magia para Gatos. Todos los derechos reservados.</p>
+        <p>Síguenos en: 
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </p>
     </footer>
 
-    <!-- Enlace a Bootstrap JS y Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Canvas Script -->
+    <script>
+            const canvas = document.getElementById('magicCanvas');
+            const ctx = canvas.getContext('2d');
+
+            // Ajustar el tamaño del gato al tamaño del canvas
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const headRadius = 80;
+
+            // Dibujar la cabeza del gato
+            ctx.fillStyle = '#ffb6c1';
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, headRadius, 0, Math.PI * 2, true);
+            ctx.fill();
+
+            // Dibujar las orejas del gato
+            ctx.beginPath();
+            ctx.moveTo(centerX - headRadius, centerY - headRadius);
+            ctx.lineTo(centerX - headRadius / 2, centerY - headRadius / 2);
+            ctx.lineTo(centerX - headRadius * 1.2, centerY - headRadius / 2);
+            ctx.closePath();
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(centerX + headRadius, centerY - headRadius);
+            ctx.lineTo(centerX + headRadius / 2, centerY - headRadius / 2);
+            ctx.lineTo(centerX + headRadius * 1.2, centerY - headRadius / 2);
+            ctx.closePath();
+            ctx.fill();
+
+            // Dibujar los ojos del gato
+            ctx.fillStyle = '#000';
+            ctx.beginPath();
+            ctx.arc(centerX - headRadius / 2.5, centerY - headRadius / 4, headRadius / 10, 0, Math.PI * 2, true);
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(centerX + headRadius / 2.5, centerY - headRadius / 4, headRadius / 10, 0, Math.PI * 2, true);
+            ctx.fill();
+
+            // Dibujar la nariz del gato
+            ctx.fillStyle = '#ff69b4';
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(centerX - headRadius / 10, centerY + headRadius / 5);
+            ctx.lineTo(centerX + headRadius / 10, centerY + headRadius / 5);
+            ctx.closePath();
+            ctx.fill();
+
+            // Dibujar la boca del gato
+            ctx.strokeStyle = '#000';
+            ctx.beginPath();
+            ctx.moveTo(centerX - headRadius / 10, centerY + headRadius / 5);
+            ctx.lineTo(centerX, centerY + headRadius / 3);
+            ctx.lineTo(centerX + headRadius / 10, centerY + headRadius / 5);
+            ctx.stroke();
+
+            // Dibujar los bigotes del gato
+            ctx.beginPath();
+            ctx.moveTo(centerX - headRadius / 2, centerY + headRadius / 10);
+            ctx.lineTo(centerX - headRadius, centerY + headRadius / 10);
+            ctx.moveTo(centerX - headRadius / 2, centerY + headRadius / 5);
+            ctx.lineTo(centerX - headRadius, centerY + headRadius / 4);
+            ctx.moveTo(centerX + headRadius / 2, centerY + headRadius / 10);
+            ctx.lineTo(centerX + headRadius, centerY + headRadius / 10);
+            ctx.moveTo(centerX + headRadius / 2, centerY + headRadius / 5);
+            ctx.lineTo(centerX + headRadius, centerY + headRadius / 4);
+            ctx.stroke();
+
+            // Dibujar elementos mágicos (estrellas)
+            function drawStar(cx, cy, spikes, outerRadius, innerRadius) {
+            let rot = Math.PI / 2 * 3;
+            let x = cx;
+            let y = cy;
+            let step = Math.PI / spikes;
+
+            ctx.strokeSyle = "#000";
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - outerRadius);
+            for (let i = 0; i < spikes; i++) {
+                x = cx + Math.cos(rot) * outerRadius;
+                y = cy + Math.sin(rot) * outerRadius;
+                ctx.lineTo(x, y);
+                rot += step;
+
+                x = cx + Math.cos(rot) * innerRadius;
+                y = cy + Math.sin(rot) * innerRadius;
+                ctx.lineTo(x, y);
+                rot += step;
+            }
+            ctx.lineTo(cx, cy - outerRadius);
+            ctx.closePath();
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = 'gold';
+            ctx.stroke();
+            ctx.fillStyle = 'yellow';
+            ctx.fill();
+            }
+
+            drawStar(centerX - 150, centerY - 150, 5, 30, 15);
+            drawStar(centerX + 150, centerY - 150, 5, 30, 15);
+            drawStar(centerX, centerY + 150, 5, 30, 15);
+    </script>
 </body>
 </html>

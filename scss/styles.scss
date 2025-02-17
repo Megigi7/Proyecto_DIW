@@ -1,0 +1,117 @@
+// Colores pasteles
+$pastel-pink: #ffb6c1;
+$pastel-purple: #d8bfd8; 
+$pastel-magenta: #c79cc7;
+$pastel-blue: #add8e6;
+$pastel-green: #98fb98;
+$pastel-yellow: #fffacd;
+
+// Estilos personalizados
+body {
+    background: url('../img/fondo.jpg') no-repeat center center/cover;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-top: 50px; // Ajustar el padding superior para evitar que el contenido quede oculto detrás de la navbar
+}
+
+.navbar {
+    height: 50px;
+    .nav-link {
+        color: white !important;
+        &:hover {
+            color: $pastel-yellow !important;
+        }
+    }
+}
+
+.hero-section {
+    padding: 100px 0;
+    background: linear-gradient(to right, $pastel-purple, $pastel-blue);
+    h1, p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.bg-white{
+    background-color: rgb(255, 223, 252);
+}
+
+.bg-pastel-blue {
+    background-color: $pastel-blue;
+}
+
+.bg-pastel-magenta {
+    background-color: $pastel-magenta;
+}
+
+.bg-pastel-purple {
+    background-color: $pastel-purple;
+}
+
+.bg-pastel-pink {
+    background-color: $pastel-pink;
+}
+
+.btn-pastel-pink {
+    background-color: $pastel-pink;
+    border-color: $pastel-pink;
+    color: white;
+    &:hover {
+        background-color: darken($pastel-pink, 10%);
+        border-color: darken($pastel-pink, 10%);
+    }
+}
+
+.btn-pastel-purple {
+    background-color: $pastel-purple;
+    border-color: $pastel-purple;
+    color: white;
+    &:hover {
+        background-color: darken($pastel-purple, 10%);
+        border-color: darken($pastel-purple, 10%);
+    }
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+footer {
+    background-color: $pastel-purple;
+    color: white;
+    a {
+        color: white;
+        margin: 0 10px;
+        &:hover {
+            color: $pastel-pink;
+        }
+    }
+}
+
+.form-control {
+    border-radius: 0;
+    &:focus {
+        border-color: $pastel-purple;
+        box-shadow: 0 0 5px rgba($pastel-purple, 0.5);
+    }
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $pastel-purple;
+}
+
+.text-pastel-green {
+    color: $pastel-green;
+}
+
+.text-pastel-yellow {
+    color: $pastel-yellow;
+}
