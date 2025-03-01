@@ -106,3 +106,160 @@ footer a:hover {
 .text-pastel-yellow {
   color: #fffacd;
 }/*# sourceMappingURL=styles.css.map */
+
+/* Profesores Section */
+.profesores-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #2c1810 0%, #1a0f3d 100%);
+}
+
+.profesores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.profesor-card {
+  perspective: 1500px;
+  height: 400px;
+}
+
+.profesor-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+}
+
+.profesor-card:hover .profesor-content {
+  transform: rotateY(180deg);
+}
+
+.profesor-front, .profesor-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profesor-front {
+  background: linear-gradient(45deg, #f3e5f5, #e1bee7);
+}
+
+.profesor-back {
+  background: linear-gradient(45deg, #e1bee7, #ce93d8);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profesor-front img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.profesor-front h3 {
+  color: #4a148c;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profesor-front p {
+  color: #6a1b9a;
+  font-style: italic;
+}
+
+.profesor-back p {
+  color: #4a148c;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .profesores-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+  }
+  
+  .profesor-card {
+      height: 350px;
+  }
+}
+
+/* ... existing styles ... */
+
+/* Contact Form Styling */
+#contacto form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#contacto .form-label {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+#contacto .form-control {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+#contacto .form-control:focus {
+  background: #fff;
+  border-color: #ffb6c1;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+}
+
+#contacto button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+#contacto button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+}
+
+/* Add some animation when the form comes into view */
+#contacto .col-md-6 {
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
