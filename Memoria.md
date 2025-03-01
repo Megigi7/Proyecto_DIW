@@ -3,8 +3,7 @@
 Este proyecto consiste en la creacion de una página web temátizada usando bootstrap personalizado, cuidando que el diseño sea responsive, usando contenido multimedia optimizado y cumpliendo los requerimiento de accesibilidad y usabilidad
 
 ## Parte 1: Web personalizada con Bootstrap
-
-### Estructura básica y organización del documento HTML
+#### Estructura básica y organización del documento HTML
 
 Antes de comenzar a estructurar la página web, añadí estos cambios en la seacción `<head>`:
 
@@ -15,11 +14,12 @@ Antes de comenzar a estructurar la página web, añadí estos cambios en la seac
   - Mis estilos personalizados: `<link href="scss/styles.css" rel="stylesheet">`
   - Font Awesome para iconos: `<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">`
   - Animate.css para animaciones: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>`
+    
 ![image](https://github.com/user-attachments/assets/64bac2a0-36d5-4015-a063-65abc5e3e4a0)
 
 
 
-### Barra de navegación (Navbar)
+#### Barra de navegación (Navbar)
 
 He implementado la barra de navegación utilizando el componente Navbar de Bootstrap con las siguientes características:
 
@@ -28,7 +28,6 @@ He implementado la barra de navegación utilizando el componente Navbar de Boots
 ```
 
 Aquí, estoy usando:
-- `navbar`: Clase base para la barra de navegación
 - `navbar-expand-lg`: Hace que el menú se colapse en dispositivos con pantallas menores que large (lg)
 - `navbar-light`: Aplica un esquema de colores claro para los elementos de navegación
 - `bg-pastel-magenta`: Mi color personalizado definido en SASS
@@ -36,7 +35,7 @@ Aquí, estoy usando:
 
 Dentro del navbar he incluido:
 - Un logo con texto utilizando `navbar-brand`
-- Un botón de hamburguesa para dispositivos móviles con atributos de accesibilidad:
+- Un botón para dispositivos móviles con atributos de accesibilidad:
   ```html
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
   ```
@@ -54,9 +53,13 @@ Dentro del navbar he incluido:
   </ul>
   ```
 
-### Hero Section
+![image](https://github.com/user-attachments/assets/7e793421-ffe3-4498-a49f-78ca6158e067)
 
-Para la sección principal de bienvenida, he creado una hero section impactante:
+  
+
+#### Hero Section
+
+Para la sección principal de bienvenida, he creado una hero section:
 
 ```html
 <section class="hero-section text-center text-white py-5">
@@ -65,17 +68,20 @@ Para la sección principal de bienvenida, he creado una hero section impactante:
 He utilizado:
 - `text-center`: Para centrar el contenido horizontalmente
 - `text-white`: Para establecer el texto en color blanco
-- `py-5`: Padding vertical de nivel 5 (el máximo en Bootstrap)
+- `py-5`: Padding vertical de 5
 
 Dentro de esta sección, he incluido:
-- Un título con la clase `display-4` para darle mayor prominencia visual
-- Un subtítulo con la clase `lead` para destacarlo como texto introductorio
-- Un botón de llamada a la acción con clases personalizadas:
+- Un título con la clase `display-4` para darle mayor visibilidad
+- Un subtítulo con la clase `lead` como texto introductorio
+- Un botón de llamada a la acción con clases personalizadas que redirije a la sección "#modalidades":
   ```html
   <a href="#modalidades" class="btn btn-pastel-pink btn-lg">Explora Nuestros Cursos</a>
   ```
 
-### Sección "Sobre nosotros"
+![image](https://github.com/user-attachments/assets/37dc04d2-847a-449e-91ac-042777c0744c)
+
+
+#### Sección "Sobre nosotros"
 
 Para esta sección, he usado:
 
@@ -105,8 +111,12 @@ Aquí, estoy usando:
 - `col-lg-6`: Cada columna ocupa la mitad del ancho en pantallas grandes
 - `animate__animated animate__fadeInLeft/Right`: Animaciones de entrada desde los laterales
 - `d-none d-lg-block`: Hace que la imagen sea visible solo en pantallas grandes
+La primera columna tiene como fondo la imagen de el pergamino que hace que tenga ese aspecto mágico
 
-### Sección "Modalidades"
+![image](https://github.com/user-attachments/assets/5203c024-1103-4051-81c2-2305d227872b)
+
+
+#### Sección "Modalidades"
 
 Para mostrar los diferentes cursos, he utilizado cards de Bootstrap organizadas en una cuadrícula responsive:
 
@@ -140,9 +150,12 @@ He utilizado:
 - `d-flex flex-column`: Para organizar el contenido verticalmente
 - `mt-auto`: Para empujar el botón hacia abajo (siempre al final del card)
 
-### Sección "Profesores Destacados"
+![image](https://github.com/user-attachments/assets/33e46233-0c5e-4c28-98a8-95c7228c147b)
 
-Para esta sección he creado un diseño personalizado basado en CSS Grid que extiende las capacidades de Bootstrap:
+
+#### Sección "Profesores Destacados"
+
+Para esta sección he creado un diseño personalizado basado en CSS Grid que complementa las capacidades de Bootstrap:
 
 ```html
 <section id="profesores" class="container-fluid my-5 profesores-section">
@@ -152,7 +165,7 @@ Para esta sección he creado un diseño personalizado basado en CSS Grid que ext
 </section>
 ```
 
-Cada profesor se presenta en una tarjeta con efecto flip (volteo):
+Cada profesor se presenta en una tarjeta con efecto flip:
 
 ```html
 <div class="profesor-card">
@@ -169,7 +182,10 @@ Cada profesor se presenta en una tarjeta con efecto flip (volteo):
 
 Este efecto se logra mediante CSS personalizado que complementa Bootstrap, permitiendo mostrar información adicional cuando el usuario interactúa con la tarjeta.
 
-### Sección "Actividades Extraescolares"
+![image](https://github.com/user-attachments/assets/99492cd6-d2f9-4b51-8ed9-0d2620d9336c)
+
+
+#### Sección "Actividades Extraescolares"
 
 He implementado un carrusel de Bootstrap para mostrar las diferentes actividades:
 
@@ -192,7 +208,10 @@ El carrusel incorpora:
   ```
 - Clases de accesibilidad como `visually-hidden` para lectores de pantalla
 
-### Sección "Michiartistas"
+![image](https://github.com/user-attachments/assets/6788fc9d-f8d9-4b03-bab3-0709e25d1e59)
+
+
+#### Sección "Michiartistas"
 
 En esta sección he combinado contenido multimedia de diferentes tipos:
 
@@ -211,7 +230,11 @@ He incluido:
   <canvas id="magicCanvas" width="500%" height="315" class="bg-white"></canvas>
   ```
 
-### Sección "Contacto"
+![image](https://github.com/user-attachments/assets/1353a083-f900-4867-b897-9310a6e96d20)
+
+
+
+#### Sección "Contacto"
 
 Para el formulario de contacto, he utilizado los componentes de formulario de Bootstrap:
 
@@ -232,16 +255,12 @@ Cada campo sigue la estructura recomendada por Bootstrap:
 </div>
 ```
 
-He añadido validación básica con el atributo `required` y una función JavaScript para gestionar el envío:
+He añadido validación básica con el atributo `required` y una función JavaScript para gestionar el envío
 
-```javascript
-function sendEmail(e) {
-    e.preventDefault();
-    // Lógica de envío de correo
-}
-```
+![image](https://github.com/user-attachments/assets/d4fadd99-e090-4137-a953-88c073a642b0)
 
-### Footer
+
+#### Footer
 
 He completado la estructura con un footer sencillo pero informativo:
 
@@ -258,9 +277,12 @@ Incluye:
   <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
   ```
 
+![image](https://github.com/user-attachments/assets/74e53db3-0fe4-4447-a0d7-9561a30b95fa)
+
+
 ## Parte 2: Contenido multimedia
 
-### Imágenes
+#### Imágenes
 
 He utilizado numerosas imágenes a lo largo del sitio web, todas optimizadas para su uso en la web:
 
@@ -288,7 +310,7 @@ He utilizado numerosas imágenes a lo largo del sitio web, todas optimizadas par
   ```
   En formato JPG por tratarse de fotografías.
 
-### Vídeos
+#### Vídeos
 
 He incorporado vídeos de YouTube mediante iframes:
 
@@ -301,7 +323,7 @@ Características:
 - Atributos de accesibilidad (title)
 - Configuración de permisos (allow)
 
-### Canvas interactivo
+#### Canvas interactivo
 
 He implementado un dibujo de un gato utilizando la API Canvas de HTML5:
 
@@ -309,21 +331,9 @@ He implementado un dibujo de un gato utilizando la API Canvas de HTML5:
 <canvas id="magicCanvas" width="500%" height="315" class="bg-white"></canvas>
 ```
 
-El JavaScript asociado dibuja:
-- La cabeza del gato
-- Las orejas
-- Los ojos y nariz
-- Elementos decorativos (estrellas)
+El JavaScript asociado realiza el dibujo del gato con la función `drawStar` que crea estrellas personalizadas:
 
-La función `drawStar` crea estrellas personalizadas:
-
-```javascript
-function drawStar(cx, cy, spikes, outerRadius, innerRadius) {
-    // Código para dibujar estrellas
-}
-```
-
-### Animaciones
+#### Animaciones
 
 He utilizado dos tipos de animaciones:
 
@@ -334,6 +344,7 @@ He utilizado dos tipos de animaciones:
    Aplicando clases como `animate__fadeInLeft`, `animate__fadeInRight` y `animate__fadeInDown`.
 
 2. **Efectos CSS personalizados** para las tarjetas de profesores, que tienen una animación de volteo al pasar el cursor sobre ellas.
+
 
 ## Parte 3: Accesibilidad y usabilidad
 
@@ -398,7 +409,7 @@ Los elementos interactivos proporcionan feedback visual:
 
 #### Legibilidad
 
-He prestado especial atención a la legibilidad:
+La legibilidad se mantiene lo más óptima posible:
 - Texto con tamaño adecuado
 - Espaciado suficiente entre elementos
 - Fondos texturados sutiles que no interfieren con la lectura
@@ -415,7 +426,17 @@ El diseño se adapta a diferentes tamaños de pantalla:
 El formulario de contacto sigue buenas prácticas:
 - Etiquetas claras asociadas con los campos mediante `for` e `id`
 - Validación con mensajes de error
-- Botón de envío prominente y distintivo
+- Botón de envío distintivo
+
+#### Análisis con herramientas web
+Desde esta página web 
+  > https://wave.webaim.org/
+hemos realizado un análisis de nuestra web. Nos ha devuelto los siguientes resultados:
+![image](https://github.com/user-attachments/assets/6b0a2614-a62c-4fe4-85a1-bdb3f6b44b44)
+- 3 errores: Links vacíos de rrss que no se usan
+- 24 errores de contrastes: Elementos mejorables como botones y títulos
+Por lo demás, nuestra página web cumple con los requisitos
+
 
 ## Implementación de SASS y personalización de Bootstrap
 
@@ -454,13 +475,13 @@ He creado estilos específicos para elementos como las tarjetas de profesores:
 ```scss
 .profesor-card {
     perspective: 1000px;
-    // más estilos
+    // etc
 }
 
 .profesor-content {
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    // más estilos
+    // etc
 }
 ```
 
@@ -474,8 +495,25 @@ A lo largo de este proyecto, he aplicado una amplia gama de tecnologías y técn
 
 3. He incorporado diversos tipos de contenido multimedia (imágenes, vídeos, canvas) optimizados para web.
 
-4. He implementado principios de accesibilidad siguiendo las pautas WCAG, asegurando que el sitio sea usable por personas con diferentes capacidades.
+El desarrollo de esta página web me ha ayudado a sensibilizarme con los requisitos 
 
-5. He añadido interactividad mediante JavaScript para mejorar la experiencia de usuario.
+5. He implementado principios de accesibilidad siguiendo las pautas WCAG, asegurando que el sitio sea usable por personas con diferentes capacidades.
+
+6. He añadido interactividad mediante JavaScript para mejorar la experiencia de usuario.
 
 La "Escuela de Magia para Gatos" es un ejemplo de cómo se pueden combinar estas tecnologías para crear un sitio web moderno, accesible y visualmente atractivo, cumpliendo con todos los requisitos establecidos en el enunciado de la práctica.
+
+## Organización con Trello
+Comienzo del proyecto:  12/02/2025
+![image](https://github.com/user-attachments/assets/09525f0a-8407-4aae-8283-402dc42bc09b)
+
+Creación de estructura web junto a contenido multimedia: 14/02/2025 - 20/02/2025
+![image](https://github.com/user-attachments/assets/c9d1af2e-1f79-416f-9877-ccbd7b2ba36c)
+
+Adaptación de la web siguiendo las pautas de accesibilidad y usabilidad: 20/02/25 - 22/02/205
+![image](https://github.com/user-attachments/assets/36470e5f-d5f3-4684-9012-427e1e959e7f)
+
+Finalización del proyecto: 22/02/2025
+![image](https://github.com/user-attachments/assets/6e4a0235-0b02-47b8-9325-2a0068decc4d)
+
+
