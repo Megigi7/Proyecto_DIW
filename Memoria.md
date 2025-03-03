@@ -1,4 +1,6 @@
 # Proyecto DIW: Escuela de Magia para Gatos
+- María Alves Mascareña
+- 27.02.25
 
 Este proyecto consiste en la creacion de una página web temátizada usando bootstrap personalizado, cuidando que el diseño sea responsive, usando contenido multimedia optimizado y cumpliendo los requerimiento de accesibilidad y usabilidad
 
@@ -516,4 +518,5 @@ Adaptación de la web siguiendo las pautas de accesibilidad y usabilidad: 20/02/
 Finalización del proyecto: 22/02/2025
 ![image](https://github.com/user-attachments/assets/6e4a0235-0b02-47b8-9325-2a0068decc4d)
 
-
+## Bibliografía
+- Documentación eniun proporcionada en moodle
