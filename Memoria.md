@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/fe0ed380-5856-4baf-b66c-0c2a41207cf1)
+
+
 # Proyecto DIW: Escuela de Magia para Gatos
 - María Alves Mascareña
 - 27.02.25
